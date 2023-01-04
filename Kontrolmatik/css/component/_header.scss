@@ -1,0 +1,101 @@
+header{
+    position: fixed;
+    z-index: 25;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 116px;
+    padding: 0 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #F5F5F5;
+    transition: background-color 0.2s;
+    .nav-menu{
+        margin-left: 20px;
+        margin-right: 20px;
+        ul{
+            display: flex;
+            .item-1{
+                margin-left: 104px;
+            }
+            li{
+                
+                a{
+                    display: block;
+                    padding: 12px 35px 12px 16px;
+                    background-color: rgba(245, 245, 245, 0);
+                    border-radius: 100px;
+                    font-size: 0.9375em;
+                    font-weight: 500;
+                    color: #141414;
+                    line-height: 16px;
+                    transition: background-color 0.15s;
+                }
+            }
+        }
+    }
+
+    .buttons{
+        display: flex;
+        .search-btn{
+            display: block;
+            width: 48px;
+            height: 48px;
+            background-color: #fff;
+            background-position: center center;
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            background-image: url(data:image/svg+xml,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20viewBox%3D%220%200%2032%2032%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cpath%20d%3D%22M29%2027.5859L21.4479%2020.0338C23.2626%2017.8552%2024.1675%2015.0608%2023.9744%2012.2319C23.7813%209.40306%2022.505%206.75757%2020.4111%204.84576C18.3171%202.93396%2015.5667%201.90303%2012.732%201.96745C9.8973%202.03186%207.19656%203.18666%205.19161%205.19161C3.18666%207.19656%202.03186%209.8973%201.96745%2012.732C1.90303%2015.5667%202.93396%2018.3171%204.84576%2020.4111C6.75757%2022.505%209.40306%2023.7813%2012.2319%2023.9744C15.0608%2024.1675%2017.8552%2023.2626%2020.0338%2021.4479L27.5859%2029L29%2027.5859ZM3.99999%2013C3.99999%2011.22%204.52783%209.4799%205.51677%207.99986C6.5057%206.51982%207.91131%205.36627%209.55584%204.68508C11.2004%204.00389%2013.01%203.82566%2014.7558%204.17292C16.5016%204.52019%2018.1053%205.37736%2019.364%206.63603C20.6226%207.8947%2021.4798%209.49835%2021.8271%2011.2442C22.1743%2012.99%2021.9961%2014.7996%2021.3149%2016.4441C20.6337%2018.0887%2019.4802%2019.4943%2018.0001%2020.4832C16.5201%2021.4722%2014.78%2022%2013%2022C10.6139%2021.9973%208.32621%2021.0483%206.63895%2019.361C4.9517%2017.6738%204.00264%2015.3861%203.99999%2013Z%22%20fill%3D%22%233D3D3D%22%2F%3E%20%3C%2Fsvg%3E%20);
+            border: 2px solid #E0E0E0;
+            border-radius: 50%;
+            visibility: visible;
+        }
+        .menu-lang{
+            margin-left: 8px;
+            opacity: 1;
+            .lang-selected{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 48px;
+                height: 48px;
+                border: 2px solid #E0E0E0;
+                border-radius: 50%;
+                font-weight: 500;
+                font-size: 0.9375em;
+                color: #666666;
+                line-height: 16px;
+            }
+            .lang-header{
+                display: none;
+            }
+            .lang-option-container{
+                position: absolute;
+                padding-top: 8px;
+                margin: 0 0 0 -8px;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s 0.3s, visibility 0.0s 0.6s;
+                ul{
+                    width: 64px;
+                    padding: 8px 8px;
+                    background-color: #F5F5F5;
+                    border-radius: 100px;
+                    .lang-selected{
+                        width: 48px;
+                        height: 48px;
+                        border: 2px solid #E0E0E0;
+                        border-radius: 50%;
+                        font-weight: 500;
+                        font-size: 0.9375em;
+                        color: #666666;
+                        line-height: 16px;
+                        display:none
+                    }
+                }
+            }       
+        }
+    }
+   
+}
